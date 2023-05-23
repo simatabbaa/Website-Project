@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Things to Do in Jordan</title>
+    <link rel="icon" type="image/x-icon" href="Desktop/flag-round-250.ico"> 
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+    
+    /* Set height of body and the document to 100% */
+    body, html {
+    background-color: #f9bcbc;
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    /* Style tab links */
+    .tablink {
+      background-color: #b09322;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 20%;
+    }
+    
+    .tablink:hover {
+      background-color: #e2c045;
+    }
+    
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+
+    #Home {background-color: #f9bcbc;}
+    #Dead Sea {background-color: #f9bcbc;}
+    #Petra {background-color: #f9bcbc;}
+    #Wadi Rum {background-color: #f9bcbc;}
+    #Roman Ruins {background-color: #f9bcbc;}
+    .auto-style1 {
+	color: #FFFFFF;
+}
+.auto-style2 {
+	text-decoration: none;
+}
+    .auto-style3 {
+	color: #FFFFF6;
+}
+    </style>
+    </head>
+    <body>
+    
+    <button class="tablink" onclick="openPage('Home', this, '#e9c15b')">Home</button>
+    <button class="tablink" onclick="('Dead Sea', this, '#e9c15b')">
+	<span class="auto-style1">
+	<a class="auto-style2" href="DeadSea.html" name="Dead_Sea" target="_blank">
+	<span class="auto-style3">Dead Sea</span></a></span></button>
+    <button class="tablink" onclick="openPage('Petra', this, '#e9c15b')" id="defaultOpen">
+	<a class="auto-style2" href="Petra.html" name="Petra" target="_blank">
+	<span class="auto-style3">Petra</span></a></button>
+    <button class="tablink" onclick="openPage('Wadi Rum', this, '#e9c15b')">
+	<a class="auto-style2" href="Wadi%20Rum.html" name="Wadi_Rum" target="_blank">
+	<span class="auto-style3">Wadi Rum</span></a></button>
+    <button class="tablink" onclick="openPage('Roman Ruins', this, '#e9c15b')">
+	<a class="auto-style2" href="Roman%20Ruins.html" name="Roman_Ruins" target="_blank">
+	<span class="auto-style3">Roman Ruins</span></a></button>
+
+
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>home pagee</p>
+    
+    </div>
+    
+    <div id="Dead Sea" class="tabcontent">
+      <h3>Dead Sea</h3>
+      <p>Home is where the heart is..</p>
+    </div>
+    
+    <div id="Petra" class="tabcontent">
+      <h3>Petra</h3>
+      <p>Some news this fine day!</p> 
+    </div>
+    
+    <div id="Wadi Rum" class="tabcontent">
+      <h3>Wadi Rum</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+    
+    <div id="Roman Ruins" class="tabcontent">
+      <h3>Roman Ruins</h3>
+      <p>Who we are and what we do.</p>
+    </div>
+    
+    <script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       
+    </body>
+    </html> 
+    
+
+</head>
+
+</html>
